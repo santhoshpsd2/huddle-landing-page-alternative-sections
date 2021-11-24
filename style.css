@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+body {
+  max-width: 100vw;
+}
+
+header {
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-color: hsl(193, 100%, 96%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 1.5rem 2rem;
+}
+
+.navsec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.navsec img {
+  cursor: pointer;
+  width: 120px;
+  height: 20px;
+}
+
+.tryfree {
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 3px 5px 8px hsl(192, 100%, 9%, 0.4);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.communitysec {
+  display: flex;
+  width: 100%;
+}
+
+.communitysec > * {
+  flex-basis: 50%;
+}
+
+.community_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-right: 14rem;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.community_text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.92rem;
+  line-height: 1.3rem;
+}
+
+.startedfree {
+  cursor: pointer;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  font-family: "Poppins", sans-serif;
+  width: 15rem;
+}
+
+.community_image img {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  padding: 5rem 4rem 10rem;
+  position: relative;
+}
+
+.card {
+  height: 360px;
+  border-radius: 0.5rem;
+  display: flex;
+  margin-bottom: 2rem;
+  box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
+}
+
+.cardtext {
+  flex-basis: 60%;
+  padding: 0 10.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cardtext h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.cardtext p {
+  color: hsl(208, 11%, 55%);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.cardimage {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.cardimage img {
+  object-fit: contain;
+  height: 80%;
+  width: 100%;
+}
+
+.mainbottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
+  width: 60%;
+  height: 200px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.mainbottom h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.startedfreebottom {
+  cursor: pointer;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  color: #fff;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  padding: 7rem 4rem 1rem;
+}
+
+.footermain {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+
+.address_phone {
+  align-self: center;
+  padding-right: 6rem;
+}
+
+.address_phone small {
+  font-family: "Open Sans", sans-serif;
+  font-size: 400;
+  opacity: 0.7;
+}
+
+.address img {
+  height: 5%;
+  width: 5%;
+}
+
+.address {
+  display: flex;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.phone {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.email {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.aboutus {
+  place-self: center;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact {
+  place-self: center;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact li,
+.aboutus li {
+  cursor: pointer;
+}
+
+.sociallinks {
+  padding-top: 2.5rem;
+  justify-self: center;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.sociallinks li {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sociallinks li:hover {
+  background-color: hsl(193, 100%, 96%);
+  color: hsl(192, 100%, 9%);
+}
+
+.footerbottom {
+  text-align: end;
+  margin-top: 4rem;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .communitysec {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .community_text {
+    padding-right: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .community_text p {
+    font-size: 0.96rem;
+  }
+
+  .startedfree {
+    margin: 0 auto;
+  }
+
+  main {
+    width: 400px;
+    padding: 2rem 1rem 7rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+  }
+
+  .grow,
+  .users {
+    flex-direction: column-reverse;
+  }
+
+  .cardtext {
+    padding: 0 2.6rem;
+    flex-basis: 40%;
+    text-align: center;
+  }
+
+  .cardtext h2 {
+    font-size: 1.3rem;
+  }
+
+  .cardtext p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .cardimage {
+    flex-basis: 60%;
+  }
+
+  .cardimage img {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .mainbottom {
+    width: 80%;
+    height: 150px;
+  }
+
+  .mainbottom h2 {
+    font-size: 1rem;
+  }
+
+  .startedfreebottom {
+    padding: 0.7rem 3rem;
+  }
+
+  footer {
+    width: 400px;
+    padding-inline: 2rem;
+  }
+
+  .footermain {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutus,
+  .contact {
+    width: 100%;
+    margin-top: 1rem;
+    align-items: flex-start;
+  }
+
+  .sociallinks {
+    justify-content: center;
+  }
+
+  .footerbottom {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
